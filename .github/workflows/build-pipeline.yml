@@ -14,6 +14,13 @@ jobs:
     steps:
       - run: |
           echo "This is a comment"
+          
+jobs:
+  add-beans:
+  grind-beans:
+    needs: add-beans
+  brew-coffee:
+    needs: [add-beans, grind-beans]
 
 jobs:
   deploy:
