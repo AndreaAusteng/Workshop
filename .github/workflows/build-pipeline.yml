@@ -1,4 +1,4 @@
-name: This is a workflow!
+name: This is a workflow
 
 on:
   push:
